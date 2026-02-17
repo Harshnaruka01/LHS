@@ -1,3 +1,6 @@
+import designImage from '../Photos/design.jpg';
+import testingImage from '../Photos/testing.jpg';
+
 function Process() {
   return (
     <section id="process" className="section">
@@ -11,7 +14,7 @@ function Process() {
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1559028006-44a36f1223c3?w=400" alt="Planning & Design" />
+          <img src={designImage} alt="Planning & Design" />
           <h3>2. Planning & Design</h3>
           <p>I create wireframes and choose design based on brand.</p>
         </div>
@@ -23,7 +26,7 @@ function Process() {
         </div>
 
         <div className="card">
-          <img src="https://images.unsplash.com/photo-1554224154-260325c0592c?w=400" alt="Testing & Delivery" />
+          <img src={testingImage} alt="Testing & Delivery" />
           <h3>4. Testing & Delivery</h3>
           <p>After testing, I deploy and deliver the final product.</p>
         </div>
