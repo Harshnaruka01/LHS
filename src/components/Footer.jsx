@@ -28,12 +28,12 @@ function Footer() {
         <div className="footer-section">
           <h4>Contact</h4>
           <p>Email: harsh@example.com</p>
-          <p>Phone: +91 XXXXX XXXXX</p>
+          <p>Phone: +91 72218 39023</p>
           <div className="social-links">
-            <a href="#" aria-label="Facebook">f</a>
+            <a href="https://www.instagram.com/harsh._.naruka/" aria-label="Instagram">i</a>
             <a href="#" aria-label="Twitter">t</a>
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="GitHub">g</a>
+            <a href="https://www.linkedin.com/in/harsh-966490297/" aria-label="LinkedIn">in</a>
+            <a href="https://github.com/Harshnaruka01" aria-label="GitHub">g</a>
           </div>
         </div>
       </div>
