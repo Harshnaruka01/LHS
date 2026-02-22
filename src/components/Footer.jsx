@@ -1,6 +1,9 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
 function Footer() {
+  const footerRef = useScrollAnimation();
   return (
-    <footer className="footer">
+    <footer className="footer scroll-animation-target" ref={footerRef}>
       <div className="footer-content">
         <div className="footer-section">
           <h3>L.H.S</h3>

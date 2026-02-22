@@ -1,9 +1,11 @@
 import designImage from '../Photos/design.jpg';
 import testingImage from '../Photos/testing.jpg';
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 function Process() {
+  const sectionRef = useScrollAnimation();
   return (
-    <section id="process" className="section">
+    <section id="process" className="section scroll-animation-target" ref={sectionRef}>
       <h2>My Development Process</h2>
 
       <div className="cards">

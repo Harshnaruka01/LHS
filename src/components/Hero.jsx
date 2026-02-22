@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
 function Hero() {
+  const heroRef = useScrollAnimation();
   const handleWhatsAppClick = () => {
     const phoneNumber = "919461816161";
     const whatsappURL = `https://wa.me/${phoneNumber}`;
@@ -44,7 +46,7 @@ function Hero() {
   // removed interval-based rotation; using typewriter effect above
 
   return (
-    <section className="hero">
+    <section className="hero scroll-animation-target" ref={heroRef}>
       <div className="hero-background" aria-hidden="true"></div>
       <div className="hero-badge">
         <span className="dot" aria-hidden="true"></span>

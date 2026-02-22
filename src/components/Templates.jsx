@@ -1,6 +1,9 @@
+import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
 function Templates() {
+  const sectionRef = useScrollAnimation();
   return (
-    <section id="templates" className="section">
+    <section id="templates" className="section scroll-animation-target" ref={sectionRef}>
       <h2>Website Templates</h2>
 
       <div className="cards">
