@@ -617,7 +617,8 @@ body {
 @media (max-width: 768px) {
   .hero {
     padding: 80px 0;
-    min-height: auto;
+    /* increase hero height on tablet/small screens so content has room */
+    min-height: 70vh;
   }
 
   .hero h1 {
@@ -708,6 +709,8 @@ body {
   .navbar a { margin-left: 0; font-size: 0.95rem; }
 
   .hero { padding: 40px 0; }
+  /* give extra vertical space for very small screens */
+  .hero { min-height: 80vh; }
   .hero h1 { font-size: 2rem; }
   .hero-lines { min-height: 3.2rem; }
   .hero-line { font-size: 1.4rem; }
