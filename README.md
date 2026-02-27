@@ -1,16 +1,80 @@
-# React + Vite
+# LHS Client Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the source code for the LHS client-facing website built with React and Vite. The project provides a modern, performant, and accessible single-page application showcasing client information, projects, and contact options.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 18+** with functional components and hooks
+- **Vite** for fast development server and optimized builds
+- **ESLint** configured for code quality
+- Custom components: `About`, `Hero`, `Projects`, `Templates`, `Contact`, and more
+- Responsive design with CSS modules and utility classes
+- Scroll animations via `useScrollAnimation` hook
 
-## React Compiler
+## 📁 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+public/            # Static assets
+src/               # Application source code
+  assets/          # Images and icons
+  components/      # React components used across the site
+  hooks/           # Custom React hooks
+  Photos/          # Photo assets used on the site
+  App.jsx          # Root component
+  main.jsx         # Entry point
+```
 
-## Expanding the ESLint configuration
+## ⚙️ Development Setup
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+2. **Start dev server**
+
+   ```bash
+   npm run dev
+   ```
+
+   The app will be available at `http://localhost:5173` by default.
+
+3. **Build for production**
+
+   ```bash
+   npm run build
+   ```
+
+4. **Preview production build locally**
+   ```bash
+   npm run preview
+   ```
+
+## 🛠️ Testing & Linting
+
+- Run linting:
+  ```bash
+  npm run lint
+  ```
+
+> ⚠️ This project currently does not include a testing framework. Add Jest, Cypress, or similar as needed.
+
+## 📦 Deployment
+
+Deploy the `dist/` folder produced by `npm run build` to any static hosting provider such as GitHub Pages, Netlify, Vercel, or Surge.
+
+## 💡 Contributing
+
+Feel free to open issues or pull requests to improve the site.
+
+- Follow the coding style used throughout the codebase
+- Update or add documentation when new features are added
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+_This README replaces the original Vite template details with project-specific information._

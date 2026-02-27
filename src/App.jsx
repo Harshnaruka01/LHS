@@ -5,6 +5,7 @@ import Process from "./components/Process";
 import Templates from "./components/Templates";
 import Footer from "./components/Footer";
 import Projects from "./components/Projects";
+import About from "./components/About";
 import "./App.css";
 
 function Home() {
@@ -35,6 +36,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
         <Route path="/projects" element={<ProjectsPage />} />
       </Routes>
     </BrowserRouter>
